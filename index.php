@@ -11,7 +11,11 @@ require 'vendor/autoload.php';
 
 $mdpdf = new mPDF();
 $mdpdf->writeHTML($html);
-$mdpdf->Output('arquivo.pdf', '');
+$mdpdf->Output('file.pdf', ''); //i = browser - d = download - f = save
+
+$link = 'http://localhost/exem-pdf/file.pdf';
+
+echo ="Download Link:</br>".$link;
 
 
 ?>
